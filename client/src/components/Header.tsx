@@ -15,7 +15,7 @@ export default function Header({ showBack = false, showCta = true, centered = fa
         <Link href="/">
           <button className="flex items-center gap-1 text-foreground" data-testid="button-back">
             <ArrowLeft className="w-5 h-5" />
-            <span className="text-base">돌아가기</span>
+            <span className="text-base font-medium">돌아가기</span>
           </button>
         </Link>
       ) : (
@@ -23,8 +23,7 @@ export default function Header({ showBack = false, showCta = true, centered = fa
           <Sparkles className="w-7 h-7 text-primary" />
           <Link href="/">
             <span 
-              className="text-lg font-bold tracking-tight cursor-pointer"
-              style={{ fontFamily: 'Public Sans, sans-serif' }}
+              className="text-xl font-bold tracking-tight cursor-pointer"
               data-testid="logo"
             >
               SUN MOON
@@ -34,10 +33,7 @@ export default function Header({ showBack = false, showCta = true, centered = fa
       )}
       
       {centered && (
-        <h2 
-          className="absolute left-1/2 -translate-x-1/2 text-lg font-bold tracking-tight"
-          style={{ fontFamily: 'Public Sans, sans-serif' }}
-        >
+        <h2 className="absolute left-1/2 -translate-x-1/2 text-xl font-bold tracking-tight">
           SUN MOON
         </h2>
       )}
@@ -46,10 +42,10 @@ export default function Header({ showBack = false, showCta = true, centered = fa
         <Link href="/quote">
           <Button 
             size="sm" 
-            className="rounded-full px-4"
+            className="rounded-full px-4 font-semibold"
             data-testid="button-header-quote"
           >
-            Get a Quote
+            견적 받기
           </Button>
         </Link>
       )}

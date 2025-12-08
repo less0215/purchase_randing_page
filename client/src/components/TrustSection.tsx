@@ -3,19 +3,19 @@ import { Award, Users, BadgeCheck, MapPin } from "lucide-react";
 const trustBadges = [
   {
     icon: Award,
-    label: "DPMS License Holder",
+    label: "DPMS 라이선스 보유",
   },
   {
     icon: Users,
-    label: "HICC Member",
+    label: "HICC 회원사",
   },
   {
     icon: BadgeCheck,
-    label: "Chrono24 Verified",
+    label: "Chrono24 공식 인증",
   },
   {
     icon: MapPin,
-    label: "Hong Kong Entity",
+    label: "홍콩 법인",
   },
 ];
 
@@ -23,10 +23,10 @@ export default function TrustSection() {
   return (
     <section data-testid="section-trust">
       <h2 
-        className="text-[22px] font-bold leading-tight tracking-tight px-4 pb-3 pt-8"
+        className="text-2xl font-bold leading-tight tracking-tight px-4 pb-3 pt-8"
         data-testid="text-trust-headline"
       >
-        Why Trust SUN MOON?
+        왜 SUN MOON인가요?
       </h2>
       
       <div className="grid grid-cols-2 gap-4 p-4">

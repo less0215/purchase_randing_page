@@ -3,18 +3,18 @@ import { Banknote, ShieldCheck, Rocket } from "lucide-react";
 const solutionCards = [
   {
     icon: Banknote,
-    title: "Highest Price",
-    description: "We leverage global market data to ensure you get the best offer.",
+    title: "업계 최고가",
+    description: "글로벌 시장 데이터를 활용해 최상의 가격을 제시합니다.",
   },
   {
     icon: ShieldCheck,
-    title: "Guaranteed Confidentiality",
-    description: "Your privacy is our priority. All transactions are secure and discreet.",
+    title: "비밀 보장",
+    description: "프라이버시가 최우선입니다. 모든 거래는 안전하고 비공개로 진행됩니다.",
   },
   {
     icon: Rocket,
-    title: "Simple, Fast Process",
-    description: "Get paid quickly with our streamlined 3-step buying process.",
+    title: "간편하고 빠른 프로세스",
+    description: "3단계 간소화된 매입 프로세스로 빠르게 대금을 받으세요.",
   },
 ];
 
@@ -22,10 +22,10 @@ export default function SolutionSection() {
   return (
     <section data-testid="section-solution">
       <h2 
-        className="text-[22px] font-bold leading-tight tracking-tight px-4 pb-3 pt-8"
+        className="text-2xl font-bold leading-tight tracking-tight px-4 pb-3 pt-8"
         data-testid="text-solution-headline"
       >
-        The SUN MOON Solution
+        SUN MOON의 해결책
       </h2>
       
       <div className="flex flex-col gap-4 p-4">
@@ -37,7 +37,7 @@ export default function SolutionSection() {
           >
             <card.icon className="w-8 h-8 text-primary flex-shrink-0" />
             <div>
-              <h3 className="font-bold" data-testid={`text-solution-title-${index}`}>
+              <h3 className="font-bold text-base" data-testid={`text-solution-title-${index}`}>
                 {card.title}
               </h3>
               <p className="text-muted-foreground text-sm" data-testid={`text-solution-desc-${index}`}>

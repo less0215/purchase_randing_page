@@ -5,7 +5,6 @@ import SolutionSection from "@/components/SolutionSection";
 import TrustSection from "@/components/TrustSection";
 import ProcessSection from "@/components/ProcessSection";
 import CTASection from "@/components/CTASection";
-import Footer from "@/components/Footer";
 
 export default function LandingPage() {
   return (
@@ -19,7 +18,6 @@ export default function LandingPage() {
         <ProcessSection />
         <CTASection />
       </main>
-      <Footer />
     </div>
   );
 }
