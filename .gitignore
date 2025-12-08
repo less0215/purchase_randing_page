@@ -5,6 +5,9 @@ server/public
 vite.config.ts.*
 *.tar.gz
 
+# macOS metadata files
+._*
+
 # Service Account credentials (never commit!)
 watchup-468105-233e828e0209.json
 *.credentials.json
