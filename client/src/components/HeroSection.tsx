@@ -4,35 +4,37 @@ import heroImage from "@assets/generated_images/luxury_rolex_watch_product_shot.
 
 export default function HeroSection() {
   return (
-    <section className="py-12 md:py-20 lg:py-24" data-testid="section-hero">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12 items-center">
-          <div className="lg:col-span-3 space-y-6">
+    <section className="@container" data-testid="section-hero">
+      <div className="p-0 md:p-4">
+        <div 
+          className="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat md:gap-8 md:rounded-lg items-start justify-end px-4 pb-10 md:px-10"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.6) 100%), url("${heroImage}")`
+          }}
+        >
+          <div className="flex flex-col gap-2 text-left">
             <h1 
-              className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight"
+              className="text-white text-4xl font-black leading-tight tracking-tight md:text-5xl"
               data-testid="text-hero-headline"
             >
-              국내에서 팔기 어려우셨죠?
+              Get the True Value for Your Rolex. Fast and Confidential.
             </h1>
-            <p 
-              className="text-lg md:text-xl text-muted-foreground leading-relaxed"
+            <h2 
+              className="text-gray-200 text-sm font-normal leading-normal md:text-base"
               data-testid="text-hero-subheadline"
             >
-              해외 스탬핑, 비인기 모델, AD 관계 걱정까지—<br className="hidden md:block" />
-              국내 매입처에서 제값 받기 어려운 롤렉스가 있습니다
-            </p>
+              SUN MOON offers the highest prices and a seamless selling experience for Rolex owners.
+            </h2>
           </div>
-          
-          <div className="lg:col-span-2">
-            <div className="relative aspect-[4/3] rounded-lg overflow-hidden bg-card">
-              <img 
-                src={heroImage}
-                alt="럭셔리 롤렉스 시계"
-                className="w-full h-full object-cover"
-                data-testid="img-hero"
-              />
-            </div>
-          </div>
+          <Link href="/quote" className="w-full max-w-[480px]">
+            <Button 
+              size="lg"
+              className="w-full h-12 rounded-lg text-base font-bold"
+              data-testid="button-hero-cta"
+            >
+              Get a Quote
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,44 +1,60 @@
-import { Link, useLocation } from "wouter";
-import { ArrowLeft, Phone } from "lucide-react";
+import { Link } from "wouter";
+import { ArrowLeft, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface HeaderProps {
   showBack?: boolean;
+  showCta?: boolean;
+  centered?: boolean;
 }
 
-export default function Header({ showBack = false }: HeaderProps) {
-  const [location] = useLocation();
-
+export default function Header({ showBack = false, showCta = true, centered = false }: HeaderProps) {
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b" data-testid="header">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <div className="flex items-center justify-between gap-4 h-16">
-          <div className="flex items-center gap-4">
-            {showBack && (
-              <Link href="/">
-                <Button variant="ghost" size="sm" data-testid="button-back">
-                  <ArrowLeft className="w-4 h-4 mr-1" />
-                  돌아가기
-                </Button>
-              </Link>
-            )}
-            <Link href="/">
-              <span 
-                className="text-xl font-bold tracking-tight cursor-pointer"
-                style={{ fontFamily: 'Inter, sans-serif' }}
-                data-testid="logo"
-              >
-                SUN MOON
-              </span>
-            </Link>
-          </div>
-          
-          <div className="hidden md:flex items-center gap-2 text-sm text-muted-foreground">
-            <Phone className="w-4 h-4" />
-            <span data-testid="text-location">서울역 인근</span>
-          </div>
+    <header className="sticky top-0 z-50 flex items-center justify-between bg-background/80 backdrop-blur-sm p-4 border-b" data-testid="header">
+      {showBack ? (
+        <Link href="/">
+          <button className="flex items-center gap-1 text-foreground" data-testid="button-back">
+            <ArrowLeft className="w-5 h-5" />
+            <span className="text-base">돌아가기</span>
+          </button>
+        </Link>
+      ) : (
+        <div className="flex items-center gap-2">
+          <Sparkles className="w-7 h-7 text-primary" />
+          <Link href="/">
+            <span 
+              className="text-lg font-bold tracking-tight cursor-pointer"
+              style={{ fontFamily: 'Public Sans, sans-serif' }}
+              data-testid="logo"
+            >
+              SUN MOON
+            </span>
+          </Link>
         </div>
-      </div>
+      )}
+      
+      {centered && (
+        <h2 
+          className="absolute left-1/2 -translate-x-1/2 text-lg font-bold tracking-tight"
+          style={{ fontFamily: 'Public Sans, sans-serif' }}
+        >
+          SUN MOON
+        </h2>
+      )}
+      
+      {showCta && !showBack && (
+        <Link href="/quote">
+          <Button 
+            size="sm" 
+            className="rounded-full px-4"
+            data-testid="button-header-quote"
+          >
+            Get a Quote
+          </Button>
+        </Link>
+      )}
+      
+      {showBack && <div className="w-24" />}
     </header>
   );
 }

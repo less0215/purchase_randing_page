@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { MapPin, MessageCircle } from "lucide-react";
-import { SiTelegram } from "react-icons/si";
+import { Sparkles } from "lucide-react";
 import ContactModal from "./ContactModal";
 
 export default function Footer() {
@@ -8,38 +7,32 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="py-8 border-t bg-card/30" data-testid="footer">
-        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
-              <span 
-                className="text-lg font-bold"
-                style={{ fontFamily: 'Inter, sans-serif' }}
-                data-testid="text-footer-logo"
-              >
-                SUN MOON
-              </span>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <MapPin className="w-4 h-4" />
-                <span data-testid="text-footer-location">서울역 인근</span>
-              </div>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <SiTelegram className="w-4 h-4" />
-                <span data-testid="text-footer-telegram">텔레그램 문의</span>
-              </div>
-            </div>
-            
+      <footer className="bg-card p-8 border-t" data-testid="footer">
+        <div className="text-center">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <Sparkles className="w-7 h-7 text-primary" />
+            <h2 
+              className="text-lg font-bold leading-tight tracking-tight"
+              style={{ fontFamily: 'Public Sans, sans-serif' }}
+              data-testid="text-footer-logo"
+            >
+              SUN MOON
+            </h2>
+          </div>
+          <div className="space-y-1 text-sm text-muted-foreground">
+            <p data-testid="text-footer-email">contact@sunmoon.com</p>
+            <p data-testid="text-footer-phone">+852 1234 5678</p>
+            <p data-testid="text-footer-address">123 Watch St, Central, Hong Kong</p>
+          </div>
+          <div className="mt-6 text-xs text-muted-foreground">
+            <p data-testid="text-copyright">© 2024 SUN MOON. All rights reserved.</p>
             <button 
               onClick={() => setContactOpen(true)}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors underline underline-offset-4"
-              data-testid="button-contact"
+              className="underline mt-2 hover:text-foreground transition-colors"
+              data-testid="button-privacy"
             >
-              기타 문의
+              Privacy Policy
             </button>
-          </div>
-          
-          <div className="mt-6 pt-6 border-t text-center text-xs text-muted-foreground">
-            <p data-testid="text-copyright">© 2024 SUN MOON. All rights reserved.</p>
           </div>
         </div>
       </footer>
