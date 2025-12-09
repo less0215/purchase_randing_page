@@ -19,16 +19,16 @@ export default function EmpathySection() {
         {t("empathy.subheadline")}
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4">
+      <div className="flex flex-col gap-3 p-4">
         {cards.map((card, index) => {
           const Icon = icons[index];
           return (
             <div
               key={index}
-              className="flex flex-1 gap-3 rounded-lg border bg-card p-4 flex-col"
+              className="flex items-start gap-4 rounded-lg border bg-card p-4"
               data-testid={`card-empathy-${index}`}
             >
-              <Icon className="w-6 h-6 text-primary" />
+              <Icon className="w-6 h-6 text-primary flex-shrink-0 mt-0.5" />
               <div className="flex flex-col gap-1">
                 <h3 className="text-base font-bold leading-tight" data-testid={`text-empathy-title-${index}`}>
                   {card.title}

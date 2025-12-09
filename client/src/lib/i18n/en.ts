@@ -5,7 +5,7 @@ export default {
   },
   hero: {
     headline: "Can't Sell Your Rolex in Korea?<br />Get the Best Price Overseas.",
-    subheadline: "SUN MOON offers Rolex owners the best prices<br class=\"hidden md:block\" />and a seamless selling experience.",
+    subheadline: "Professional dealers active at global watch shows<br class=\"hidden md:block\" />will assess the true value and offer you a fair price.",
     cta: "Get Free Quote",
   },
   empathy: {
@@ -31,7 +31,7 @@ export default {
     cards: [
       {
         title: "Best Industry Prices",
-        description: "We offer the best prices for watches that were refused or undervalued domestically.",
+        description: "We offer the best prices for watches that were undervalued domestically.",
       },
       {
         title: "Confidentiality Guaranteed",
@@ -39,7 +39,7 @@ export default {
       },
       {
         title: "Simple and Fast Process",
-        description: "Get paid quickly through our streamlined 3-step process.",
+        description: "Receive cash quickly through our simple 3-step process. (Cryptocurrency available)",
       },
     ],
   },

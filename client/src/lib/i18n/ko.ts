@@ -5,7 +5,7 @@ export default {
   },
   hero: {
     headline: "국내에서 팔지 못한 롤렉스<br />해외에서 제값 받고 판매하세요",
-    subheadline: "SUN MOON은 롤렉스 소유자를 위한 최고가 매입과<br class=\"hidden md:block\" />원활한 판매 경험을 제공합니다.",
+    subheadline: "글로벌 시계쇼에서 활동 중인 전문 딜러가<br class=\"hidden md:block\" />올바른 가치를 책정해 가격을 제안해 드립니다.",
     cta: "무료 견적 받기",
   },
   empathy: {
@@ -31,7 +31,7 @@ export default {
     cards: [
       {
         title: "업계 최고가",
-        description: "국내에서 매입 거부·낮은 가격을 제안 받은 시계에 최고가를 제시합니다.",
+        description: "국내에서 낮은 가격을 제안 받은 시계에 최고가를 제시합니다.",
       },
       {
         title: "비밀 보장",
@@ -39,7 +39,7 @@ export default {
       },
       {
         title: "간편하고 빠른 프로세스",
-        description: "3단계 간소화된 매입 프로세스로 빠르게 대금을 받으세요.",
+        description: "간단한 3단계 매입 프로세스로 빠르게 현금 수령이 가능합니다. (암호화폐 가능)",
       },
     ],
   },
