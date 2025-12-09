@@ -46,7 +46,7 @@ export default function Header({ showBack = false, showCta = true, centered = fa
         </div>
       )}
 
-      {centered && (
+      {centered && !showBack && (
         <h2 className="absolute left-1/2 -translate-x-1/2 text-xl font-bold tracking-tight">
           SUN MOON
         </h2>
@@ -82,8 +82,6 @@ export default function Header({ showBack = false, showCta = true, centered = fa
           </Link>
         )}
       </div>
-
-      {showBack && <div className="w-6" />}
     </header>
   );
 }
