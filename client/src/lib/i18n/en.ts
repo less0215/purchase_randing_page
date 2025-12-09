@@ -4,7 +4,7 @@ export default {
     getQuote: "Get Quote",
   },
   hero: {
-    headline: "Get the True Value of<br />Your Rolex, Fast and Safe.",
+    headline: "Can't Sell Your Rolex in Korea?<br />Get the Best Price Overseas.",
     subheadline: "SUN MOON offers Rolex owners the best prices<br class=\"hidden md:block\" />and a seamless selling experience.",
     cta: "Get Free Quote",
   },
@@ -14,32 +14,28 @@ export default {
     cards: [
       {
         title: "Overseas Stamping",
-        description: "We purchase all watches regardless of where they were bought.",
+        description: "Watches bought overseas can't get local A/S, so domestic stores hesitate to buy them, right?",
       },
       {
         title: "Unpopular Models",
-        description: "We offer optimal prices for any model using global market data.",
+        description: "It's hard to sell just because it's not steel, isn't it?",
       },
       {
-        title: "AD Relationship Concerns",
-        description: "All transactions are completely independent and private.",
-      },
-      {
-        title: "Complete Confidentiality",
-        description: "Sell your watch without hassle or privacy concerns.",
+        title: "Sales History",
+        description: "Hesitant to sell due to AD monitoring or personal information exposure?",
       },
     ],
   },
   solution: {
-    headline: "SUN MOON's Solution",
+    headline: "We Offer Clear Solutions",
     cards: [
       {
         title: "Best Industry Prices",
-        description: "We offer the best prices using global market data.",
+        description: "We offer the best prices for watches that were refused or undervalued domestically.",
       },
       {
         title: "Confidentiality Guaranteed",
-        description: "Your privacy comes first. All transactions are secure and private.",
+        description: "Your privacy comes first. All transactions are conducted via Telegram with auto-deleting messages.",
       },
       {
         title: "Simple and Fast Process",
@@ -50,10 +46,10 @@ export default {
   trust: {
     headline: "Why SUN MOON?",
     badges: [
-      "DPMS Licensed",
-      "HICC Member",
-      "Chrono24 Certified",
-      "Hong Kong Corporation",
+      "Hong Kong DPMS License B",
+      "Regular Attendee at HK Watch Show (Asia's Largest)",
+      "Chrono24 Trusted Dealer",
+      "Hong Kong & Korea Corporations",
     ],
   },
   process: {
@@ -74,8 +70,8 @@ export default {
     ],
   },
   cta: {
-    headline: "Discover Your Watch's True Value Today",
-    subheadline: "Get a free expert quote. Fast, free, and completely confidential.",
+    headline: "Check Your Purchase Price Now!",
+    subheadline: "Get a free professional watch appraisal from a global dealer.",
     button: "Get Free Quote",
   },
   quote: {

@@ -4,7 +4,7 @@ export default {
     getQuote: "견적 받기",
   },
   hero: {
-    headline: "롤렉스의 진정한 가치,<br />빠르고 안전하게 받으세요.",
+    headline: "국내에서 팔지 못한 롤렉스<br />해외에서 제값 받고 판매하세요",
     subheadline: "SUN MOON은 롤렉스 소유자를 위한 최고가 매입과<br class=\"hidden md:block\" />원활한 판매 경험을 제공합니다.",
     cta: "무료 견적 받기",
   },
@@ -14,32 +14,28 @@ export default {
     cards: [
       {
         title: "해외 스탬핑",
-        description: "구매 지역에 관계없이 모든 시계를 매입합니다.",
+        description: "해외 구매 시계는 국내에서 A/S가 불가해 국내 매장도 매입을 꺼려하죠?",
       },
       {
         title: "비인기 모델",
-        description: "해외 시세 데이터로 어떤 모델이든 최적의 가격을 제시합니다.",
+        description: "스틸이 아니라는 이유로 판매하기가 쉽지 않으시죠?",
       },
       {
-        title: "AD 관계 우려",
-        description: "거래는 완전히 독립적이고 비공개로 진행됩니다.",
-      },
-      {
-        title: "철저한 비밀 보장",
-        description: "번거로움이나 프라이버시 걱정 없이 시계를 판매하세요.",
+        title: "판매 이력",
+        description: "AD 모니터링·개인 정보 노출 때문에 판매하기가 망설여지시죠?",
       },
     ],
   },
   solution: {
-    headline: "SUN MOON의 해결책",
+    headline: "명쾌한 해결책을 제시합니다",
     cards: [
       {
         title: "업계 최고가",
-        description: "글로벌 시장 데이터를 활용해 최상의 가격을 제시합니다.",
+        description: "국내에서 매입 거부·낮은 가격을 제안 받은 시계에 최고가를 제시합니다.",
       },
       {
         title: "비밀 보장",
-        description: "프라이버시가 최우선입니다. 모든 거래는 안전하고 비공개로 진행됩니다.",
+        description: "프라이버시가 최우선입니다. 모든 거래는 메시지가 자동 삭제 되는 텔레그램으로 진행됩니다.",
       },
       {
         title: "간편하고 빠른 프로세스",
@@ -50,10 +46,10 @@ export default {
   trust: {
     headline: "왜 SUN MOON인가요?",
     badges: [
-      "DPMS 라이선스 보유",
-      "HICC 회원사",
-      "Chrono24 공식 인증",
-      "홍콩 법인",
+      "홍콩 DPMS License B 보유",
+      "홍콩 시계쇼 정기 참석 (아시아 최대 규모)",
+      "Chrono24 최상위 딜러 (Trusted)",
+      "홍콩·한국 법인 보유",
     ],
   },
   process: {
@@ -74,8 +70,8 @@ export default {
     ],
   },
   cta: {
-    headline: "지금 바로 시계의 진정한 가치를 확인하세요",
-    subheadline: "전문가의 무료 견적을 받아보세요. 빠르고, 무료이며, 완전히 비밀이 보장됩니다.",
+    headline: "지금 바로 매입가를 확인해 보세요 !",
+    subheadline: "글로벌 딜러의 전문 시계 감정을 무료로 받아 보실 수 있습니다.",
     button: "무료 견적 받기",
   },
   quote: {

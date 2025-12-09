@@ -1,7 +1,7 @@
-import { Globe, Watch, Handshake, Lock } from "lucide-react";
+import { Globe, Watch, Eye } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
-const icons = [Globe, Watch, Handshake, Lock];
+const icons = [Globe, Watch, Eye];
 
 export default function EmpathySection() {
   const { t } = useTranslation();
